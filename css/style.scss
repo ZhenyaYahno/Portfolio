@@ -1,0 +1,244 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+%heder-middle-block{
+    text-align: center;
+    margin:25px auto;
+}
+header{
+    position: absolute;
+    width: 100%;
+    
+    background: linear-gradient(to bottom, #004ddb, rgb(0, 160, 253));
+    .header-top-block{
+        width: 77%;
+        height: 70px;
+        margin: auto;
+        margin-bottom: 50px;
+        
+
+        &-left{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        float: left;
+        width: 200px;
+        height: 70px;
+        
+        .topicon{
+            display: block;
+            font-size: 50px;
+            color: rgb(250, 250, 250);
+            margin-right: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.863);
+            font-size: 20px;
+            
+            p{
+                display: inline-block;
+            }
+        }
+
+        }
+
+        &-right{
+            padding-top: 10px;
+            float: right;
+            height: 70px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            nav{
+                
+                height: 38px;
+                width: 90px;
+                border-radius: 20px;
+                text-align: center;
+                padding: 7px 0;
+                a{
+                    text-decoration: none;
+                    color: rgb(250, 250, 250);
+                    font-size: 16px; 
+                    font-weight: 600; 
+                }
+            }
+            
+        }
+    }
+    .heder-middle-block1{
+        @extend %heder-middle-block;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+
+    }
+    .heder-middle-block2{
+        @extend %heder-middle-block;
+        color: rgba(255, 255, 255, 0.589);
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .heder-middle-block3{
+        @extend %heder-middle-block;
+        .button-first{
+          text-decoration: none;
+          border-radius: 10px;
+          width: 180px;
+          height: 60px;
+          background-color: white;
+          margin: 15px auto 0 auto;
+          border: none;
+          color: rgb(0, 0, 185);
+          font-weight: bolder;
+          font-size: 16px;
+          cursor: pointer;
+          outline: none;
+        }
+        .button-first:hover{
+            opacity: 0.9;
+        }
+    
+    }
+    .heder-bottom{
+        margin: 28px auto 0 auto;
+        width: 50%;
+        height: 354px;
+        
+         
+        img{
+           height:100%;
+           width: 100%;
+        }
+    }
+    .first-aside{
+       
+        position: absolute;
+        top: 0%;
+        right: 0px ;
+        height: 100%;
+        width: 300px;
+        background-color: rgb(235, 235, 235);
+        z-index: 1111;
+        
+        &-top{
+         display: flex;
+         align-items: center;
+         position: absolute;
+         top: 0%;
+         width: 100%;
+         height: 70px;
+         background-color: white;
+         border-bottom: 1px solid rgb(240, 240, 240);
+         box-shadow: 2px 2px 9px 0px silver;
+         padding: 15px;
+         &-left{
+             
+             color: silver;
+         }
+         &-right1{
+             position: absolute;
+             top: 24px;
+             right: 15px;
+             color: silver;
+             border-radius: 50%;
+             width: 25px;
+             height: 25px;
+         }
+         &-right2{
+            position: absolute;
+            top: 24px;
+            right: 60px;
+            color: silver;
+            border-radius: 50%;
+            width: 25px;
+             height: 25px;
+        }
+        &-right1:hover{
+            background-color: rgb(255, 94, 94);
+        }
+        &-right2:hover{
+            background-color: rgb(255, 94, 94);
+        }
+        }
+        &-bottom{
+          position: absolute;
+          bottom: 13px;
+          left: 5%;
+          width: 90%;
+          border-radius: 5px;
+          background-color: white;
+          height: 220px; 
+          &-up{
+              width: 100%;
+              margin-bottom: 10px;
+              img{
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  margin: 10px;
+              }
+               p{
+                  position: relative;
+                  top: -20px;
+                  display: inline-block;
+                  font-size: 26px;
+                  color: rgb(29, 29, 29);
+                  
+              }
+          }
+           &-middle{
+               margin: 0px 10px 10px 10px;
+               color: rgb(78, 78, 78);
+               margin-bottom: 20px;
+            }
+            &-down{
+                margin-top: 10px;
+                width: 100%;
+                 border-top: 1px solid rgb(240, 240, 240);
+                    box-shadow: 0px -5px 9px -5px silver;
+                &-form{
+                   
+                    width: 90%;
+                    margin: auto;
+                   
+                    input[type="text"]{
+                     color: rgb(129, 129, 129);
+                     width: 100%;
+                     height: 50px;
+                     outline: none;
+                     border: none;
+                     text-decoration: none;
+                     cursor: pointer;
+                    }
+                    &-button{
+                     position: absolute;
+                     outline: none;
+                     text-decoration: none;
+                     cursor: pointer;
+                     border: none;
+                     font-size: 15px;
+                     color: rgb(0, 0, 255);
+                     background-color: white;
+                   
+                    }
+                    &-button:hover{
+                        color: rgb(0, 0, 172);
+                    }
+                
+                
+                }
+            }
+        }
+    }
+
+}
+.header-top-block-right nav:last-child{
+    background-color: white;
+ 
+    
+}
